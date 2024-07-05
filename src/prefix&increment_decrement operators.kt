@@ -8,7 +8,6 @@ decrement --> prefix (--a)  || postfix (a--)
  */
 fun main(){
     val a = 5
-
     var res = +a
     println(res)
 
@@ -19,15 +18,15 @@ fun main(){
 
     ///////////////////////////////////
 
-    var b = 4
     //prefix
+    var b = 4
     var res1 = ++b
     println(res1)
 
     /////////////////////////////////////
 
-    var c = 6
     //postfix
+    var c = 6
     var res2 = c--
     println(res2)
 
