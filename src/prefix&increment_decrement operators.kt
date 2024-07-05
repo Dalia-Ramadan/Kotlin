@@ -3,13 +3,11 @@ package operators
 unary plus --> (+a)
 unary minus --> (-a)
 not --> (!a)
-increment --> (++a)
-decrement --> (--a)
+increment --> prefix (++a)  || postfix (a++)
+decrement --> prefix (--a)  || postfix (a--)
  */
 fun main(){
     val a = 5
-    var b = 4
-    var c = 6
 
     var res = +a
     println(res)
@@ -21,11 +19,16 @@ fun main(){
 
     ///////////////////////////////////
 
+    var b = 4
+    //prefix
     var res1 = ++b
     println(res1)
 
     /////////////////////////////////////
 
-    var res2 = --c
+    var c = 6
+    //postfix
+    var res2 = c--
     println(res2)
+
 }
